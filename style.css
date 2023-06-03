@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none
+    
+}
+a{
+    text-decoration: none;
+    list-style-type: none
+}
+
+header{
+    background-image: url(iframe/image/cover.png);
+    width: 480px;
+    height: 696PX;
+    background-size: contain;
+    display: flex;
+    padding-top: 10px;
+}
+header a{
+    flex-direction: column;
+    padding-left: 10px;
+}
+header p{
+    text-align: center;
+    padding-top: 500px;
+    color: white;
+}
+.vector{
+    padding-left: 340px;
+}
+main{
+    height:1400px;
+    width:480px;
+    background-color:#2A2626;
+}
+main h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+main section{
+    width: 420px;
+    height: 340px;
+    padding: 20px 10px 20px 20px;
+}
+.section2{
+    margin-top: 100px;
+    
+}
+.section3{
+    margin-top: 100px;
+}
+.main{
+    width: 480px;
+    height: 700px;
+    background-color: #0B0A0A;
+}
+.main h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.section4{
+    margin: 30px;
+}
+.section5{
+    background-color: #8E8B8B;
+    padding: 64px 60px 100px 60px;
+    margin: 30px;
+}
+footer{
+    width: 480px;
+    height: 90px;
+    background-color: #2A2626;
+    text-align: center;
+    padding-top: 30px;
+}
+footer a{
+    padding: 20px;
+}
