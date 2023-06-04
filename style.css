@@ -15,49 +15,73 @@ a{
 
 header{
     background-image: url(iframe/image/cover.png);
-    width: 480px;
-    height: 696PX;
-    background-size: contain;
-    display: flex;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: cover;
     padding-top: 10px;
+    width: 100%;
+    height: auto;
 }
+.header{
+    display: flex;
+    justify-content:space-between;
+}
+
 header a{
-    flex-direction: column;
     padding-left: 10px;
+    padding-top: 20px;
 }
 header p{
     text-align: center;
     padding-top: 500px;
     color: white;
 }
-.vector{
-    padding-left: 340px;
+li a{
+    color: white;
 }
+.vector{
+    margin-left: 220px;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    color: white;
+    padding: 20px;
+}
+
 main{
-    height:1400px;
-    width:480px;
+    height:auto; 
+    width:100%;
     background-color:#2A2626;
+    margin-right: 20px;
 }
 main h1{
     color: white;
     text-align: center;
     padding-top: 20px;
 }
+section{
+    max-width:100%;
+    height: auto;
+}
 main section{
-    width: 420px;
-    height: 340px;
-    padding: 20px 10px 20px 20px;
+    padding-left: 25px;
+    margin-top: 10px;
+
+
 }
 .section2{
-    margin-top: 100px;
-    
+    margin-top: 20px; 
+    width: 200px;
+    height: auto;   
 }
 .section3{
-    margin-top: 100px;
+    margin-top: 20px;
+    padding-bottom: 10px;
 }
 .main{
-    width: 480px;
-    height: 700px;
+    max-width: 100%;
+    height:auto;
     background-color: #0B0A0A;
 }
 .main h1{
@@ -67,20 +91,83 @@ main section{
     padding-bottom: 10px;
 }
 .section4{
-    margin: 30px;
+    width:min-content;
+    height: min-content;
 }
 .section5{
     background-color: #8E8B8B;
-    padding: 64px 60px 100px 60px;
-    margin: 30px;
+    padding: 60px 50px 60px 50px;
+    margin: 10px;
+    
 }
 footer{
-    width: 480px;
-    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
     background-color: #2A2626;
     text-align: center;
-    padding-top: 30px;
+   
 }
 footer a{
-    padding: 20px;
+    padding: 10px;
+}
+@media only screen and (max-width: 600px){
+    .ul1 li{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .vector{
+        display: none;
+    }
+    header p br{
+        display: none;
+    }
+    header{
+        background-image: url(iframe/image/cover\ for\ pc.png);
+    }
+    header p{
+        padding-bottom: 90px;
+    }
+    main div{
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    .section2{
+        margin-right: 130px;
+    }
+    .main2{
+        display: flex;
+        justify-content: space-around;
+        margin-right: 50px;
+        margin-left: 50px;
+        justify-content: center;
+       
+    }
+    .section5{
+        margin-right: 100px;
+        margin-left: 150px;
+        height: 300px;
+        width: 500px;
+        padding-right: 150px;
+        
+        
+    }
+    .section4{
+        height: 320px;
+        width: 520px;
+        margin-top: 20px;
+    }
+    footer{
+        text-align:end;
+        padding-right: 20px;  
+        padding-bottom: 20px; 
+    }
+   
 }
