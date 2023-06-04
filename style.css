@@ -15,7 +15,6 @@ a{
 
 header{
     background-image: url(iframe/image/cover.png);
-    background-repeat: no-repeat;
     background-size:contain;
     background-size: cover;
     padding-top: 10px;
@@ -26,6 +25,9 @@ header{
     display: flex;
     justify-content:space-between;
 }
+.vector{
+    padding-right: 10px;
+}
 
 header a{
     padding-left: 10px;
@@ -33,14 +35,12 @@ header a{
 }
 header p{
     text-align: center;
-    padding-top: 500px;
+    padding-top: 400px;
     color: white;
+    
 }
 li a{
     color: white;
-}
-.vector{
-    margin-left: 220px;
 }
 ul{
     display: flex;
@@ -60,29 +60,12 @@ main h1{
     text-align: center;
     padding-top: 20px;
 }
-section{
-    max-width:100%;
-    height: auto;
-}
-main section{
-    padding-left: 25px;
-    margin-top: 10px;
 
-
-}
-.section2{
-    margin-top: 20px; 
-    width: 200px;
-    height: auto;   
-}
-.section3{
-    margin-top: 20px;
-    padding-bottom: 10px;
-}
 .main{
     max-width: 100%;
     height:auto;
     background-color: #0B0A0A;
+    padding: 20px;
 }
 .main h1{
     color: white;
@@ -90,27 +73,24 @@ main section{
     padding-top: 20px;
     padding-bottom: 10px;
 }
-.section4{
-    width:min-content;
-    height: min-content;
+.div{
+    padding: 20px;
 }
-.section5{
+.P{
     background-color: #8E8B8B;
-    padding: 60px 50px 60px 50px;
-    margin: 10px;
-    
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 20px 50px 20px 50px;
 }
+
 footer{
-    display: flex;
-    justify-content: space-between;
     max-width: 100%;
     height: auto;
     background-color: #2A2626;
-    text-align: center;
-   
 }
 footer a{
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
 @media only screen and (max-width: 600px){
     .ul1 li{
@@ -119,17 +99,31 @@ footer a{
     .footer{
         display: none;
     }
+    header p .br2{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .vector{
         display: none;
     }
-    header p br{
+    .br1{
+        display: none;
+    }
+    .br3{
         display: none;
     }
     header{
         background-image: url(iframe/image/cover\ for\ pc.png);
+        background-size:cover;
+    }
+    nav{
+        display: flex;
+        padding: 20px;
+    }
+    .header a{
+        margin-left: 50px;
     }
     header p{
         padding-bottom: 90px;
@@ -137,37 +131,30 @@ footer a{
     main div{
         display: flex;
         justify-content: space-around;
-       
     }
-    .section2{
-        margin-right: 130px;
+    .main{
+        padding: 50px;
     }
     .main2{
         display: flex;
         justify-content: space-around;
-        margin-right: 50px;
         margin-left: 50px;
-        justify-content: center;
-       
     }
-    .section5{
-        margin-right: 100px;
-        margin-left: 150px;
-        height: 300px;
-        width: 500px;
-        padding-right: 150px;
-        
-        
+    .main2 p{
+        margin-left: 100px;
+        padding: 100px;
+        Width:420px;
+        Height:320px;
     }
-    .section4{
-        height: 320px;
-        width: 520px;
-        margin-top: 20px;
+    .main2 img{
+        Width:400px;
+        Height:320px;
     }
     footer{
-        text-align:end;
-        padding-right: 20px;  
-        padding-bottom: 20px; 
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px 0px 50px;
+        align-items: center;
     }
    
 }
